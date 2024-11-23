@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Transaction Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This is a React-based frontend application that interacts with a backend API to provide insights into transaction data. It features a transaction table, transaction statistics, bar charts, and pie charts. Users can filter the data by month, search for specific transactions, and visualize price ranges and category distributions through charts.
 
-## Available Scripts
+## Features
+- **Transaction Table**: Displays a paginated and searchable list of transactions. The user can filter transactions by month and search by title, description, or price.
+- **Statistics**: Provides a summary of total sales, sold items, and unsold items for the selected month.
+- **Bar Chart**: Visualizes price range distribution for the selected month. The data is grouped into different price ranges (e.g., 0-100, 101-200).
+- **Pie Chart**: Displays the distribution of items across various categories for the selected month.
+- **Pagination**: Allows users to navigate through the transaction data by pages (next and previous).
+- **Responsive Design**: The application is designed to be mobile-friendly and adjusts well across different screen sizes.
 
-In the project directory, you can run:
+## Technologies Used
+- **React.js**: The primary framework used to build the user interface.
+- **Chart.js and react-chartjs-2**: Libraries used for rendering bar and pie charts.
+- **Axios**: Used for making HTTP requests to the backend API.
+- **CSS**: For styling the components and the overall page layout.
 
-### `npm start`
+## Installation Steps
+1. Clone the repository:  
+   `git clone <your-repository-url>`
+2. Navigate to the project directory:  
+   `cd <project-folder>`
+3. Install dependencies:  
+   `npm install`
+4. Start the development server:  
+   `npm start`
+5. Open the browser and go to `http://localhost:3000` to view the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Folder Structure
+- `src/components`: Contains the main UI components like `TransactionTable`, `BarChart`, `PieChart`, `Pagination`, etc.
+- `src/styles.css`: Centralized styling for the app.
+- `src/api.js`: Axios-based API calls to interact with the backend.
+- `src/App.js`: Main application component that renders all UI elements.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API Endpoints
+- **/api/transactions**: Fetch transaction data based on the selected month, title, description, or price.
+- **/api/statistics**: Get total sales, sold items, and unsold items for the selected month.
+- **/api/barChart**: Get price range data (e.g., 0-100, 101-200) for the selected month.
+- **/api/pieChart**: Get category-wise item distribution for the selected month.
 
-### `npm test`
+## Example Usage
+1. Select a month from the dropdown.
+2. The transaction table will update to show transactions for that month.
+3. You can search transactions by title, description, or price using the search box.
+4. The statistics section will update with the sales, sold, and unsold items.
+5. The bar and pie charts will visualize price ranges and item categories for the selected month.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For any questions or contributions, feel free to reach out to:
+- yash shirsath  
+- yshirsath466@gmail.com
